@@ -1,0 +1,11 @@
+nav {
+  font-size: 1.2rem;
+  color: white;
+  border-bottom: 4px solid #e7b355;
+  padding: 1rem;
+  margin-bottom: 15px;
+}
+
+nav > * {
+  margin-left: 10%;
+}
