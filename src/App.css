@@ -9,3 +9,109 @@ nav {
 nav > * {
   margin-left: 10%;
 }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.row-container {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.row-container > :first-child {
+  margin-right: 25%;
+  position: relative;
+}
+
+.row-container img {
+  max-width: 250px;
+}
+
+#splash {
+  position: absolute;
+  max-width: 300px;
+}
+
+#hello-logo {
+  z-index: 1000;
+  position: relative;
+  left: 75px;
+  bottom: 11px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.input-container > div {
+  min-width: 450px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-container > div > input {
+  width: 100%;
+  width: 100%;
+  padding: 3rem 2rem 3rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #845ec2, 20%, #ffffff 20%);
+  font-size: 1.3rem;
+  color: #5f5b5b;
+}
+
+.input-container > div > img {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  outline: none;
+  background: #845ec2;
+  border-radius: 19px;
+  padding: 10px 25px 10px 25px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}

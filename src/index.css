@@ -1,4 +1,5 @@
 @import url("https://fonts.google.com/specimen/Love+Ya+Like+A+Sister?query=Love+Ya+Like+a+sister");
+@import url("https://fonts.google.com/specimen/Sanchez?query=Sanchez");
 
 *,
 *::before,
@@ -7,7 +8,7 @@
 }
 
 html {
-  background: #fff;
+  background: #eaeff4;
   height: 100%;
 }
 
@@ -19,6 +20,16 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 
+  font-family: "Sanchez", serif;
+  background: linear-gradient(0deg, #eaeff4 30%, #ffc75f 20%);
+}
+
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Love Ya Like A Sister", cursive;
-  background: linear-gradient(0deg, #fff 50%, #ffc75f 20%);
 }
