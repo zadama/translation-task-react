@@ -4,7 +4,11 @@ import HelloLogo from "../assets/Logo-Hello.png";
 import Input from "../components/Input";
 
 const StartupPage = (props) => {
-  //          <img src={require("../assets/Splash.svg").default}></img>
+  // Simple update to body tag. This is the only way, apart from using
+  // React-helmet, to access the body styling. We have different values for
+  // this page and the others, hence this code.
+  document.body.style.background =
+    "linear-gradient(0deg, #eaeff4 30%, #ffc75f 20%)";
 
   const handleClick = () => {
     console.log("clicked");
@@ -14,8 +18,8 @@ const StartupPage = (props) => {
     <React.Fragment>
       <div className="row-container">
         <div>
-          <img id="splash" src={Splash}></img>
-          <img id="hello-logo" src={HelloLogo}></img>
+          <img alt="splash" id="splash" src={Splash}></img>
+          <img alt="logo" id="hello-logo" src={HelloLogo}></img>
         </div>
 
         <div>

@@ -17,7 +17,7 @@ const Input = ({ inputMaxLength, handleClick }) => {
             setUsername(e.target.value);
           }}
         />
-        <img onClick={handleClick} src={Arrow} />
+        <button onClick={handleClick}>Login</button>
       </div>
     </div>
   );

@@ -82,7 +82,7 @@ nav > * {
 }
 
 .input-container > div {
-  min-width: 450px;
+  min-width: 50%;
   display: flex;
   align-items: center;
   position: relative;
@@ -91,13 +91,28 @@ nav > * {
 .input-container > div > input {
   width: 100%;
   width: 100%;
-  padding: 3rem 2rem 3rem 1rem;
+  padding: 2rem 2rem 2rem 1rem;
   outline: none;
   border: none;
-  border-radius: 10px;
   background: linear-gradient(0deg, #845ec2, 20%, #ffffff 20%);
   font-size: 1.3rem;
   color: #5f5b5b;
+}
+
+.input-container > div > button {
+  width: 200px;
+  height: 100%;
+
+  border: 0;
+  outline: none;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #1ab188;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .input-container > div > img {
