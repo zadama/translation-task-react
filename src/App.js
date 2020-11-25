@@ -7,6 +7,7 @@ import {
   PageNotFound,
 } from "./containers";
 import "./App.css";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -14,8 +15,13 @@ function App() {
       <Layout>
         <Switch>
           <Route path="/" exact component={StartupPage} />
-          <Route path="/profile" exact component={ProfilePage} />
-          <Route path="/translation" exact component={TranslationPage} />
+
+          <PrivateRoute path={"/profile"} exact component={ProfilePage} />
+          <PrivateRoute
+            path={"/translation"}
+            exact
+            component={TranslationPage}
+          />
 
           <Route component={PageNotFound} />
         </Switch>

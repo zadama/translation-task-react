@@ -3,6 +3,9 @@ import Splash from "../assets/Splash.svg";
 import HelloLogo from "../assets/Logo-Hello.png";
 import Input from "../components/Input";
 
+import { addUser, getUser } from "../util/storage";
+import { Redirect } from "react-router-dom";
+
 const StartupPage = (props) => {
   // Simple update to body tag. This is the only way, apart from using
   // React-helmet, to access the body styling. We have different values for
@@ -10,9 +13,19 @@ const StartupPage = (props) => {
   document.body.style.background =
     "linear-gradient(0deg, #eaeff4 30%, #ffc75f 20%)";
 
-  const handleClick = () => {
-    console.log("clicked");
+  const handleClick = (username) => {
+    // lägg till i localstorage
+
+    console.log(username);
+
+    addUser(username);
+
+    props.history.replace("/translation");
   };
+
+  if (getUser() != null) {
+    return <Redirect to="/translation" />;
+  }
 
   return (
     <React.Fragment>

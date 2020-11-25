@@ -1,23 +1,36 @@
-import React, { useState } from "react";
-import Arrow from "../assets/right-arrow.png";
+import React, { useState, useRef } from "react";
+import debounce from "lodash/debounce";
 
-const Input = ({ inputMaxLength, handleClick }) => {
-  const [username, setUsername] = useState("");
+const Input = (props) => {
+  const [inputValue, setInputValue] = useState("");
+
+  // Ska tas bort
+  // const delayedQuery = useRef(debounce((q) => props.handleClick(q), 500))
+  // .current;
 
   return (
     <div className="input-container">
       <div>
         <input
           text="text"
-          placeholder="What's your name?"
-          value={username}
-          maxLength={inputMaxLength}
+          placeholder={
+            props.isTranslationPage ? "Enter a sentence.." : "What's your name?"
+          }
+          value={inputValue}
+          maxLength={props.inputMaxLength}
           onChange={(e) => {
             // const sliceUserName = e.target.value.slice(0, 5);
-            setUsername(e.target.value);
+            setInputValue(e.target.value);
+            // delayedQuery(e.target.value);
           }}
         />
-        <button onClick={handleClick}>Login</button>
+        <button
+          onClick={() => {
+            props.handleClick(inputValue);
+          }}
+        >
+          {props.isTranslationPage ? "Translate" : "Login"}
+        </button>
       </div>
     </div>
   );
