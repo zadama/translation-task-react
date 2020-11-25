@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Lost in Translation Task - React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Demo of the app: https://translation-app-react.herokuapp.com/
+
 
 ## Available Scripts
 
