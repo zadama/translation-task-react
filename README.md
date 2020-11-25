@@ -1,6 +1,16 @@
 # Lost in Translation Task - React
 
-Demo of the app: https://translation-app-react.herokuapp.com/
+This web application uses React and has one main feature. The application act as a "translator" from regular text to American sign language.
+It has three pages: login-page, translation-page and a profile-page. 
+### Login-page:
+This is the first page and on this page the user can enter their name. Once the name has been stored on the browser, the app redirects the user to the translation-page.
+### Translation-page:
+The user can type in words into the input box and then click on "translate" to display the sign language.
+### Profile-page: 
+The last 10 translations is stored in the profile-page. If there is already 10 translations stored, the oldest translation is removed.
+The "logout button" clears all the storage and return the user to the start page.
+
+### Demo of the app: https://translation-app-react.herokuapp.com/
 
 
 ## Available Scripts
@@ -69,3 +79,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### This application was developed by Aman Zadran & Christopher Berglund
